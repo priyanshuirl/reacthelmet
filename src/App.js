@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet"
 function App() {
   return (
     <Router>
@@ -52,10 +52,10 @@ function Home() {
 function About() {
   return (
     <>
-      <MetaTags>
+      <Helmet>
         <meta property="og:title" content="Page1 OG title" />
         <meta property="og:description" content="Page1 OG description" />
-      </MetaTags>
+      </Helmet>
       <h2>Page 1</h2>
     </>)
 }
@@ -63,10 +63,10 @@ function About() {
 function Users() {
   return (
     <>
-      <MetaTags>
+      <Helmet>
         <meta property="og:title" content="Page2 OG title" />
         <meta property="og:description" content="Page2 OG description" />
-      </MetaTags>
+      </Helmet>
       <h2>Page 2</h2>
     </>)
 }
