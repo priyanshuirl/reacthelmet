@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import MetaTags from 'react-meta-tags';
 function App() {
   return (
     <Router>
@@ -42,15 +43,32 @@ function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <h2>Home</h2></>
+  )
 }
 
 function About() {
-  return <h2>Page 1</h2>;
+  return (
+    <>
+      <MetaTags>
+        <meta property="og:title" content="Page1 OG title" />
+        <meta property="og:description" content="Page1 OG description" />
+      </MetaTags>
+      <h2>Page 1</h2>
+    </>)
 }
 
 function Users() {
-  return <h2>Page 2</h2>;
+  return (
+    <>
+      <MetaTags>
+        <meta property="og:title" content="Page2 OG title" />
+        <meta property="og:description" content="Page2 OG description" />
+      </MetaTags>
+      <h2>Page 2</h2>
+    </>)
 }
 
 export default App;
