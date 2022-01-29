@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Test
+      <h1>Testing React Router</h1>
     </div>
   );
 }
