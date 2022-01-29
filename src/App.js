@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import {Helmet} from "react-helmet"
+import {Helmet} from "react-helmet-async"
 function App() {
   return (
     <Router>
