@@ -15,10 +15,10 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">page1</Link>
+              <Link to="/page1">page1</Link>
             </li>
             <li>
-              <Link to="/users">page2</Link>
+              <Link to="/page2">page2</Link>
             </li>
           </ul>
         </nav>
@@ -32,7 +32,7 @@ function App() {
           <Route path="/users">
             <Users />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
