@@ -5,10 +5,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import {Helmet} from "react-helmet-async"
+import { Helmet } from "react-helmet-async"
 function App() {
   return (
     <Router>
+      <Helmet>
+        <meta property="og:title" content="APP OG title" />
+        <meta property="og:description" content="APP OG description" />
+      </Helmet>
       <div>
         <nav>
           <ul>
